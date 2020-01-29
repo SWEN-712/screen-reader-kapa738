@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <h1>Information Input</h1>
+    <h2>State 1</h2>
+    <input type="checkbox" id="state1Include" /> Include this state? <br />
+    <input type="text" id="state1Name" /> state Name <br />
+	<input type="checkbox" id="state1Start" /> Is this the starting state? <br />
+	<input type="checkbox" id="state1End" /> Is this the ending state? <br />
+    <input type="checkbox" id="state1To2" /> Connection from this to state 2? <br />
+	<input type="text" id="arrow1to2text" /> Action between state 1 and 2 <br />
+    <input type="checkbox" id="state1To3" /> Connection from this to state 3? <br />
+    <input type="checkbox" id="state1To4" /> Connection from this to state 4? <br />
+
+    <br />
+    <h2>State 2</h2>
+    <input type="checkbox" id="state2Include" /> Include this state? <br />
+    <input type="text" id="state2Name" /> state Name <br />
+	<input type="checkbox" id="state2Start" /> Is this the starting state? <br />
+	<input type="checkbox" id="state2End" /> Is this the ending state? <br />
+    <input type="checkbox" id="state2To1" /> Connection from this to state 1? <br />
+    <input type="checkbox" id="state2To3" /> Connection from this to state 3? <br />
+	<input type="text" id="arrow2to3text" /> Action between state 2 and 3 <br />
+    <input type="checkbox" id="state2To4" /> Connection from this to state 4? <br />
+    <br />
+    <h2>State 3</h2>
+    <input type="checkbox" id="state3Include" /> Include this state? <br />
+    <input type="text" id="state3Name" /> state Name <br />
+	<input type="checkbox" id="state3Start" /> Is this the starting state? <br />
+	<input type="checkbox" id="state3End" /> Is this the ending state? <br />
+    <input type="checkbox" id="state3To1" /> Connection from this to state 1? <br />
+    <input type="checkbox" id="state3To2" /> Connection from this to state 2? <br />
+    <input type="checkbox" id="state3To4" /> Connection from this to state 4? <br />
+	<input type="text" id="arrow3to4text" /> Action between state 3 and 4 <br />
+    <br />
+    <h2>State 4</h2>
+    <input type="checkbox" id="state4Include" /> Include this state? <br />
+    <input type="text" id="state4Name" /> state Name <br />
+	<input type="checkbox" id="state4Start" /> Is this the starting state? <br />
+	<input type="checkbox" id="state4End" /> Is this the ending state? <br />
+    <input type="checkbox" id="state4To1" /> Connection from this to state 1? <br />
+    <input type="checkbox" id="state4To2" /> Connection from this to state 2? <br />
+    <input type="checkbox" id="state4To3" /> Connection from this to state 3? <br />
+	<input type="text" id="arrow4to1text" /> Action between state 4 and 1 <br />
+    <br />
+    <button id="generate" onclick="generateSvg()">Generate</button>
+    <br />
+    <button id="downloadSvg" onclick="downloadSvg()" style="display: none;">Download Svg</button>
+    <br />
+    <svg width="1000" height="1000" id="svgPanel"></svg>
+</body>
+
+</html>
